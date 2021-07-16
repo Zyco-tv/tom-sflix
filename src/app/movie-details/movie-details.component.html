@@ -1,0 +1,38 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <span class="navbar-brand mb-0 h1"><img src="http://image.noelshack.com/fichiers/2021/28/5/1626423249-tomsflix.png" alt="" class="h-25 w-25"></span>
+  </div>
+</nav>
+<div class="bg-netflix">
+<div class="container">
+  <div class="row pt-3">
+    <div class="col-lg-3">
+      <img *ngIf="poster_path" class="card-img-top img" alt="{{title}} " src="{{ IMG_URL + poster_path }}">
+    </div>
+    <div class="col-lg-9 mt-5 text-light">
+      <h5>{{overview}}</h5>
+      <div class="row pt-3">
+        <div class="col-lg-4 d-flex flex-column text-light">
+          <span> Nombre de vote : {{vote_count}} </span>
+          <span> Note : {{vote_average}}/10 </span>
+        </div>
+        <div class="col-lg-4 text-light">
+          <span> Date de sortie : {{release_date}}</span>
+        </div>
+        <div class="col-lg-4  text-light">
+          <span> {{adult ? "+18" : "Film en famille"}}</span>
+        </div>
+      </div>
+
+      <H5 class="pt-2"> genres :
+
+        <span *ngFor="let genre of genres " class='badge bg-secondary m-1 '> {{genre.name}} </span>
+
+      </H5>
+    </div>
+  </div>
+</div>
+</div>
+<div class="bg-netflix test">
+
+</div>

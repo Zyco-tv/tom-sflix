@@ -1,0 +1,10 @@
+<div class="d-flex main bg-netflix">
+
+  <div *ngFor="let movie of Movies " class="card movie movie-card bg-netflix ">
+
+    <img *ngIf="movie.poster_path" class="zoom affiche" alt="{{movie.title}} " [routerLink]="['details',movie.id]"
+      src="{{ IMG_URL + movie.poster_path }}">
+    <img *ngIf=" !movie.poster_path" class="zoom affiche" alt="{{movie.title}}" [routerLink]="['details',movie.id]"
+      src="../../../assets/not-found-image.jpg">
+  </div>
+</div>

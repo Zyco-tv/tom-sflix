@@ -1,0 +1,4 @@
+<nav-bar (change)="searchMovies($event)"></nav-bar>
+<movie-card [Movies]="movies"></movie-card>
+<pagnation [Current]="current" [case]="case" [Totalpages]=" totalpages" (NextPage)="getNextPage($event)"
+  (PrevPage)="getPrevPage($event)"></pagnation>

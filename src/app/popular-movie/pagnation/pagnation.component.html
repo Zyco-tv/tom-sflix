@@ -1,0 +1,11 @@
+<nav aria-label="Page navigation example ">
+  <ul class="pagination justify-content-center bg-netflix">
+    <li class="page-item " [ngClass]=" disablePrevBtn(Current)">
+      <a class="page-link" id="prev" (click)=" onPrevClick()">Avant</a>
+    </li>
+    <li class="page-item"><a class="page-link" id="current">{{Current}}</a></li>
+    <li class="page-item" [ngClass]=" disableNextBtn(Current)">
+      <a class="page-link" id="next" (click)="onNextClick()"> Suivant </a>
+    </li>
+  </ul>
+</nav>

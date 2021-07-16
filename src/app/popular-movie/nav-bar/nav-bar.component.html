@@ -1,0 +1,14 @@
+<nav class="navbar navbar-light bg-net">
+  <div class="container-fluid d-flex">
+    <span class="navbar-brand"><img src="http://image.noelshack.com/fichiers/2021/28/5/1626423249-tomsflix.png" alt="" class="h-25 w-25"></span>
+    <input *ngIf="isInputHidden" [(ngModel)]="search" (keyup)="onSubmit()" (blur)="onSubmit()" name="search" class="form-control me-2 rounded-pill" id="search" placeholder="Search">
+      <button class="btn bg-netflix" (click)="onTeamSwitchBtnClick()">
+        <svg class="w-6 h-6 bg-netflix" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+      </button>
+      <svg class="w-6 h-6 bg-netflix" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg>
+      <button class="btn">
+          <img src="https://occ-0-58-64.1.nflxso.net/dnm/api/v6/0RO1pLmU93-gdXvuxd_iYjzPqkc/AAAABTw7t_oDR-SWh9ddj9kh9AlOqCabZMupMWano7R5wg9x1_KPjvABqKHNeCxcMddK7Ku9HsV6keglPmWPZeh0lKU.png?r=fcc" alt="">
+          <svg class="w-5 h-5 bg-netflix" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </button>
+  </div>
+</nav>
